@@ -17,7 +17,6 @@ public class IndexTest {
 		index.addItem("Pavlovna", 2);
 		
 		Set<Integer> chapters = index.getIndices("Anna");
-		assertTrue(chapters.contains(1));
 		assertTrue(chapters.contains(2));
 		
 		chapters = index.getIndices("Well");
