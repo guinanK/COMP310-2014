@@ -16,7 +16,6 @@ public class Index<Something> {
 	HashMap<Something,HashSet<Integer>> index =
 			new HashMap<Something,HashSet<Integer>>();
 	
-	
 	/**
 	 * Build up the index with entries at locations.
 	 * 
@@ -24,25 +23,15 @@ public class Index<Something> {
 	 * @param location
 	 */
 	public void addItem(Something entry, int location) {
-		//if the index doesnt have an entry in it
-		//put something there(create a set)
-		if(!index.containsKey(entry))
-		{
+		// If the index doesn't have an entry in it
+		// put something there (create a set)
+		if (!index.containsKey(entry)) {
 			index.put(entry, new HashSet<Integer>());
 		}
-		//no matter what we need to add to an entry
-		//the location
+		
+		// No matter what, we need to add to an entry
+		// the location
 		index.get(entry).add(location);
-//		if(index.containsKey(entry))
-//		{
-//			HashSet<Integer> hashSet = index.get(entry);
-//			hashSet.add(new Integer(location));
-//		}
-//		else{
-//			HashSet<Integer> hashSet = new HashSet<>();
-//			hashSet.add(new Integer(location));
-//			index.put(entry,hashSet);
-//		}
 	}
 	
 	/**
