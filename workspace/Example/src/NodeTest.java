@@ -13,7 +13,8 @@ public class NodeTest {
 		thing2.setData(10);
 		thing1.setNext(thing2);
 		assertEquals(thing2, thing1.getNext());
-		assertEquals(thing1, thing2.getPrev());
+		assertEquals(thing1,thing2.getPrev());
+		
 	}
 
 }
