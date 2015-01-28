@@ -1,17 +1,27 @@
 
 public class Node<Type> {
 	private Type data;
-	private Node<Type> link;
+	private Node<Type> next;
+	private Node<Type> prev;	
+
 	public Type getData() {
 		return data;
 	}
 	public void setData(Type data) {
 		this.data = data;
 	}
-	public Node<Type> getLink() {
-		return link;
+	public Node<Type> getNext() {
+		return next;
 	}
-	public void setLink(Node<Type> link) {
-		this.link = link;
+	public void setNext(Node<Type> next) {
+		this.next = next;
+		next.prev = this;
+	}
+	public Node<Type> getPrev() {
+		return prev;
+	}
+
+	public void setPrev(Node<Type> prev) {
+		this.prev = prev;
 	}
 }
