@@ -5,8 +5,8 @@ import java.util.Set;
 
 public class Hangman {
 	private String word;
-	private Set<Character> guesses = new HashSet<Character>();
-	private Set<Character> correct = new HashSet<Character>();
+	protected Set<Character> guesses = new HashSet<Character>();
+	protected Set<Character> correct = new HashSet<Character>();
 	// Reset the game
 	public void reset() {
 		guesses.clear();

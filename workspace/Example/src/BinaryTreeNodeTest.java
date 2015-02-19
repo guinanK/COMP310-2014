@@ -15,11 +15,12 @@ public class BinaryTreeNodeTest {
 		assertEquals("fish",root.right.data);
 		assertEquals("turtle",root.right.right.data);
 		assertEquals("snake", root.right.right.left.data);
-		assertTrue(root.contains("snake"));
-		assertTrue(root.contains("cat"));
-		assertTrue(root.contains("dog"));
-		assertTrue(root.contains("turtle"));
-		assertTrue(root.contains("fish"));
+		
+		assertEquals("snake",root.findNode("snake"));
+		assertEquals("cat",root.findNode("cat"));
+		assertEquals("dog",root.findNode("dog"));
+		assertEquals("turtle",root.findNode("turtle"));
+		assertEquals("fish",root.findNode("fish"));
 	}
 
 }
