@@ -18,6 +18,7 @@ public class BinaryTreeNodeTest {
 		assertEquals("turtle", tree.right.right.data);
 		assertEquals("snake", tree.right.right.left.data);
 		assertTrue(tree.contains("snake"));
+		System.out.println("Testing remove...");
 		tree.remove("turtle");
 		assertFalse	(tree.contains("turtle"));
 		tree.remove("fish");

@@ -130,8 +130,7 @@ public class BinaryTreeNode<DataType extends Comparable<DataType>> {
 			return data;
 		}
 		return right.largestValue();
-	}
-
+	}	
 	boolean contains(DataType moreData) {
 		int result = this.data.compareTo(moreData);
 		if (result < 0) {
