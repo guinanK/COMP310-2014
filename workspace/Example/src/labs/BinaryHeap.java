@@ -5,8 +5,8 @@ public class BinaryHeap<T extends Comparable<T>> {
 	BinaryTree<T> tree = new BinaryTree<T>();
 	// Insert an element into the binary heap
 	// Not a one-liner
-	public void insert (T item) {
-		
+	public void insert (T item){
+		insert(item);
 	}
 	// Only remove the root (not a one-liner)
 	public T remove () {
